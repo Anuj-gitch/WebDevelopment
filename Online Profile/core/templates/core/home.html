@@ -1,54 +1,39 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="{% static 'core\css\all.css' %}">
-    <link rel="stylesheet" href="{% static 'core\css\bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'core\css\core.css' %}">
+{% extends 'core/base.html' %}
+{% load static %} 
+{% block content %}
+<div class="mt-5 text-center">
+    <img src="{% static 'core/images/MyPic.jpg' %}" alt="ProfilePic" 
+    class = "img-thumbnail" width = "250px" height="150px">
 
-</head>
-<body>
+    <div class="mt-5 text-white">
+        <h1 class="font-weight-bold">Hello</h1>
 
-    <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col-sm-2">
-                <div class="border-right border-warning h-100">
-                <div class="text-center">
-                    <img src="{% static 'core/images/MyPic.jpg' %}" alt="ProfilePic" 
-                    class = "img-fluid rounded-circle mt-5" width = "100px" height="100px">
-                    <h5 class="text-white mt-3">Anuj Kumar Tiwari</h5>
-                </div>
+        <div>
+            <p>
+                I am Anuj Tiwari having 2 years of MIS-Executive experience for Oravel Stay Private Limited (OYO),
+                I offer the analytical and data analysis skills you seeking for your daily business decision problem. <br><br><br>
+
+                Since earning my MBA degree in business analytics and marketing from Galgotias University, Noida, 
+                I have served as a MIS Executive for OYO Hotels & Homes one of the biggest 
+                Indian multinational hospitality chain of leased and franchised hotels, homes and living spaces. <br><br>
+
+
+                As a Executive in operational department for United State Martet I have adept at leveraging SQL for extracting insights 
+                related to hotel daily operational work around the United States market, 
+                manupulating and performing exploratory data analysis using Python and Google Sheet, in last preparing report on Google Studio.
+
+                <br><br>
+
+                Please check my other online section like skills, education, projects to know more about my professional background.
 
                 
 
-                <hr class = 'border-light'>
-                
-                    <nav class="nav flex-column text-center" >
-                        <a href="" class="nav-link">Home</a>
-                        <a href="" class="nav-link">Services</a>
-                        <a href="" class="nav-link">Skill</a>
-                        <a href="" class="nav-link">Contact</a>
-                    </nav>
-                </div>
-            </div>
 
-            <div class="class col-sm-10">
-                
-            </div>
+
+            </p>
         </div>
     </div>
-    
-    
 
 
-
-    <script src="{% static 'core/js/bootstrap.js' %}"></script>
-    <script src="{% static 'core/js/popper.js' %}"></script>
-    <script src="{% static 'core/js/all.js' %}"></script>
-    <script src="{% static 'core/js/jquery.js' %}"></script>
-</body>
-</html>
+</div>
+{% endblock content %}
