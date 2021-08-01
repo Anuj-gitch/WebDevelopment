@@ -1,0 +1,16 @@
+@media (min-width: 48em) {
+    .site-title {
+        float: left;
+    }
+}
+
+.site-title {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+@media (min-width: 48em){
+.site-nav {
+    float: right;
+}
+}
